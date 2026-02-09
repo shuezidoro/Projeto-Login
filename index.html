@@ -6,7 +6,9 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
+
 <body>
     <main>
         <section id="login">
@@ -17,7 +19,18 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo!</p>
                 <form action="cadastro.php" method="post">
-                    
+                    <div class="campo">
+                        <i class="material-symbols-outlined">person</i>
+                        <input type="email" name="login" id="ilogin" required placeholder="Digite seu email" autocomplete="email">
+                        <label for="Ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-symbols-outlined">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" required placeholder="Digite sua senha" autocomplete="current-password" minlength="8">
+                         <label for="Isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#" class="botao">Esqueceu sua senha?</a>
                 </form>
             </div>
         </section>
